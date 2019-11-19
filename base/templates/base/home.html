@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mihail Kasabov</title>
+    {% load static %}
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{% url 'home_url' %}">Home</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'dashboard_url' %}">Accounts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'todo_url' %}">Todo</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-body h-100  border-info" id="profile-wrapper">
+                <img id="profile-pic" src="{% static 'images/lichtbild.jpg' %}">
+                <hr>
+                <h4>Hi, I'm Michael!</h4>
+                <p>I love coding, researching and collaborating</p>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card card-body h-100  border-info">
+                <h4>Student in Media Engineering</h4>
+                <hr>
+                <p>Since October 2017, Mihail Kasabov has been a student at the TH Georg Simon Ohm in Nuremberg,
+                where he only has to opportunity to learn, but also test his new knowledge in different lessons.</p>
+
+                <p>While being a motivated and big-picture person, he not only works on testing his knowledge,
+                but also tends to create projects, which will be of use in the future.</p>
+
+                <p>In short, Mihail Kasabov is an organized and motivated person, who constantly thinks of ways to improve.</p>
+
+                <ul class="social-links">
+                    <li><img class="social" src="{% static 'images/facebook.png' %}"></li>
+                    <li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+                    <li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+                    <li><img class="social" src="{% static 'images/youtube.png' %}"></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>My Experience as a Developer</h5>
+                <hr>
+                <p>Internship at DATEV eG</p>
+                <p>Designed and built different network services which supported
+                    the other teams in our department.</p>
+                <p>Languages used: Perl, MySQL, HTML/CSS</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>What I Know</h5>
+                <hr>
+                <p>Python, Django, HTML/CSS, JavaScript, Angular, SQL, Perl, Linux-Terminal, different transfer protocols and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
+                <p>PS: I am constantly working on improving this site when I have time.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>How I Learn</h5>
+                <hr>
+                <p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+                <p>I can learn just about anything by having a final product to tear apart piece by piece. I break the
+                    code where I need to figure out why things work the way they do. Documentation is just a
+                    reference.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>My Short Term Goals</h5>
+                <hr>
+                <p>Preparations for the world after university are of high priority to me.
+                For this goal I intend on learning as much as I can on my own as well as at work,
+                to become the best possible engineer in the future.</p>
+                <p>Aside from building small projects I would love to enter a position where I can be part of a bigger
+                    team and learn from others with more experience than myself.</p>
+
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+
+</body>
+</html>
+
