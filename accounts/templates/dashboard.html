@@ -1,9 +1,11 @@
 {% extends 'index.html' %}
+{% include 'base/navbar.html' %}
     {% load static %}
     <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
-
+{% block navbar %}
 {% block content %}
     <h1>Welcome, {{ user.username }}</h1>
     <a href="{% url 'logout' %}">Logout</a>
 
+{% endblock %}
 {% endblock %}

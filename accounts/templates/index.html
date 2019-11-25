@@ -1,3 +1,4 @@
+{% extends 'base/navbar.html' %}
 <!DOCTYPE html>
 
 <html>
@@ -5,7 +6,7 @@
     <title>simple auth</title>
 </head>
 <body>
-
+{% block navbar %}
     {% block content %}
 
         <h1>Welcome home ,  from homepage</h1>
@@ -18,5 +19,6 @@
 
         {% endif %}
     {%  endblock %}
+{% endblock %}
 </body>
 </html>
